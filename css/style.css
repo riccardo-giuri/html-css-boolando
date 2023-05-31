@@ -3,3 +3,94 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --content-width: 1400px;
+    --card-gap: 1rem;
+}
+
+/* Header style */
+
+header{
+    background-color: #ff6900;
+    height: 70px;
+}
+
+header nav{
+    height: 100%;
+    width: var(--content-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.clients-container{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.client-style{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.logo-container{
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 150px;
+}
+
+.logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-icons{
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+}
+
+.nav-icons i{
+    width: 100%;
+    font-size: 15px;
+    color: white;
+}
+
+/* Main Style */
+
+.container{
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--card-gap);
+}
+
+.column{
+    flex-basis: calc(33.3% - var(--card-gap));
+    padding: 1rem 0rem;
+}
+
+.shopping-card{
+    background-color: gray;
+    height: 250px;
+}
+
