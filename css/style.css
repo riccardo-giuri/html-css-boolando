@@ -21,7 +21,7 @@ header{
     width: 100%;
     background-color: #ff6900;
     height: 70px;
-    z-index: 3;
+    z-index: 10;
 }
 
 header nav{
@@ -106,12 +106,65 @@ header nav{
     position: absolute;    
 }
 
-.model img:first-child:hover{
+.main-outfit{
+    z-index: 2;
+}
+
+.secondary-outfit{
     z-index: 1;
 }
 
-.model img:last-child:hover{
-    display: none;
+.main-outfit:hover{
+    display: none;  
+}
+
+.secondary-outfit:hover{
+    z-index: 3;
+}
+
+/* overlay style */
+
+.top-overlay{
+    position: absolute;
+    top: 10px;
+    text-align: right;
+    right: 0;
+    z-index: 3;
+}
+
+.top-overlay i{
+    padding: 13px;
+    font-size: 25px;
+    background-color: white;
+}
+
+.top-overlay i:hover{
+    color: red;
+}
+
+.bottom-overlay{
+    position: absolute;
+    bottom: 43px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+    z-index: 3;
+}
+
+.sticker-text{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 10px;
+    color: white;
+}
+
+.sale{   
+    background-color: red;
+}
+
+.sostenibility{
+    background-color: #008000;
 }
 
 .info .brand{
